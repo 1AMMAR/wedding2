@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات الأفراح الفاخرة | Luxury Wedding Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #c4a47c;
+            --primary-light: #e2d1b7;
+            --primary-dark: #9a7e5a;
+            --dark-color: #0a0a0a;
+            --light-color: #fff;
+            --gray-color: #f7f7f7;
+            --text-color: #333;
+            --transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--light-color);
+            direction: rtl;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 80px;
+            color: var(--dark-color);
+            position: relative;
+            font-weight: 300;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 1px;
+            background-color: var(--primary-color);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 40px;
+            background-color: transparent;
+            color: var(--light-color);
+            border: 1px solid var(--light-color);
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 400;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background-color: var(--light-color);
+            color: var(--dark-color);
+        }
+
+        .btn-dark {
+            color: var(--dark-color);
+            border-color: var(--dark-color);
+        }
+
+        .btn-dark:hover {
+            background-color: var(--dark-color);
+            color: var(--light-color);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+        }
+
+        /* Header Styles */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 20px 0;
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            padding: 15px 0;
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            color: var(--dark-color);
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 30px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        nav ul li a {
+            color: var(--dark-color);
+            font-weight: 400;
+            transition: var(--transition);
+            padding: 5px 0;
+            position: relative;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--dark-color);
+            transition: var(--transition);
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            margin-top: 0;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            font-weight: 300;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+
+        /* Intro Section */
+        .intro {
+            padding: 150px 0;
+            background-color: var(--light-color);
+            text-align: center;
+        }
+
+        .intro-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .intro h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-weight: 300;
+            color: var(--dark-color);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            color: #666;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 150px 0;
+            background-color: var(--gray-color);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: var(--light-color);
+            padding: 60px 40px;
+            text-align: center;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card i {
+            font-size: 40px;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            transition: var(--transition);
+        }
+
+        .service-card h3 {
+            margin-bottom: 20px;
+            color: var(--dark-color);
+            font-size: 22px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .service-link {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary-color);
+            position: relative;
+            display: inline-block;
+        }
+
+        .service-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        .service-link:hover::after {
+            width: 100%;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 150px 0;
+            background-color: var(--light-color);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            height: 400px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+            color: white;
+            padding: 30px;
+            transform: translateY(100%);
+            transition: var(--transition);
+            display: flex;
+            align-items: flex-end;
+            height: 100%;
+        }
+
+        .gallery-overlay h3 {
+            font-size: 22px;
+            font-weight: 300;
+            margin: 0;
+            transform: translateY(20px);
+            opacity: 0;
+            transition: all 0.4s ease 0.1s;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        .gallery-item:hover .gallery-overlay h3 {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 150px 0;
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            position: relative;
+        }
+
+        .testimonials .section-title {
+            color: var(--light-color);
+        }
+
+        .testimonials-slider {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .testimonial {
+            padding: 20px;
+            display: none;
+        }
+
+        .testimonial.active {
+            display: block;
+        }
+
+        .testimonial-content {
+            text-align: center;
+            position: relative;
+        }
+
+        .testimonial-content p {
+            margin-bottom: 30px;
+            font-size: 20px;
+            line-height: 1.8;
+            color: #ccc;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .testimonial-author img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-left: 15px;
+        }
+
+        .testimonial-author-info h4 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .testimonial-author-info span {
+            font-size: 14px;
+            color: #999;
+        }
+
+        .testimonial-controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .testimonial-control {
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            width: 50px;
+            height: 50px;
+            border-radius: 0;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: var(--light-color);
+        }
+
+        .testimonial-control:hover {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        /* Reservation Section */
+        .reservation {
+            padding: 150px 0;
+            background-color: var(--gray-color);
+            position: relative;
+        }
+
+        .reservation-form {
+            background-color: white;
+            padding: 80px;
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 60px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 60px;
+        }
+
+        .form-group:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .form-group h3 {
+            margin-bottom: 30px;
+            color: var(--dark-color);
+            font-size: 22px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            gap: 30px;
+        }
+
+        .form-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .form-control {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .form-control.full-width {
+            flex: 0 0 100%;
+        }
+
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 400;
+            color: var(--dark-color);
+        }
+
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 16px;
+            transition: var(--transition);
+            background-color: #fafafa;
+        }
+
+        .form-control input:focus,
+        .form-control select:focus,
+        .form-control textarea:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            background-color: white;
+        }
+
+        .form-control textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .checkbox-control {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-control input {
+            width: auto;
+            margin-left: 10px;
+        }
+
+        .checkbox-control label {
+            margin-bottom: 0;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 60px;
+            gap: 20px;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 150px 0;
+            background-color: var(--light-color);
+        }
+
+        .contact-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .contact-form {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .contact-item {
+            display: flex;
+            margin-bottom: 40px;
+            padding: 0 0 40px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-item i {
+            font-size: 24px;
+            color: var(--primary-color);
+            margin-left: 25px;
+            margin-top: 5px;
+        }
+
+        .contact-item h3 {
+            margin-bottom: 10px;
+            color: var(--dark-color);
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .contact-item p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 100px 0 30px;
+            position: relative;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 80px;
+            gap: 50px;
+        }
+
+        .footer-logo {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-logo h2 {
+            color: var(--light-color);
+            margin-bottom: 30px;
+            font-size: 24px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .footer-logo p {
+            color: #999;
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .footer-links {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-links h3 {
+            color: var(--light-color);
+            margin-bottom: 30px;
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links ul li a {
+            color: #999;
+            transition: var(--transition);
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-links ul li a i {
+            margin-left: 10px;
+            font-size: 14px;
+            transition: var(--transition);
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-links ul li a:hover i {
+            transform: translateX(-5px);
+        }
+
+        .footer-social {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-social h3 {
+            color: var(--light-color);
+            margin-bottom: 30px;
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: var(--transition);
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .social-icon:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .fade-in.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .delay-1 {
+            transition-delay: 0.2s;
+        }
+
+        .delay-2 {
+            transition-delay: 0.4s;
+        }
+
+        .delay-3 {
+            transition-delay: 0.6s;
+        }
+
+        /* Success Message */
+        .success-message {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .success-message.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .success-content {
+            background-color: white;
+            padding: 60px;
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            transform: translateY(30px);
+            transition: all 0.4s ease;
+        }
+        
+        .success-message.active .success-content {
+            transform: translateY(0);
+        }
+        
+        .success-content i {
+            font-size: 60px;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+        }
+        
+        .success-content h3 {
+            margin-bottom: 20px;
+            color: var(--dark-color);
+            font-size: 24px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .success-content p {
+            margin-bottom: 30px;
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--dark-color);
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        /* Full-width section */
+        .full-width-section {
+            height: 80vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light-color);
+            text-align: center;
+            position: relative;
+        }
+
+        .full-width-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .full-width-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .full-width-content h2 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .full-width-content p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1200px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .hero-content h1 {
+                font-size: 3.5rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .reservation-form {
+                padding: 60px 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+            
+            .hero-content p {
+                font-size: 1rem;
+            }
+            
+            nav ul {
+                display: none;
+            }
+            
+            .form-control {
+                flex: 0 0 100%;
+            }
+            
+            .contact-content {
+                flex-direction: column;
+            }
+            
+            .mobile-menu-btn {
+                display: flex;
+            }
+            
+            nav {
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background-color: white;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                display: none;
+                max-height: 80vh;
+                overflow-y: auto;
+                z-index: 1000;
+            }
+            
+            nav.active {
+                display: block;
+            }
+            
+            nav ul {
+                display: block;
+            }
+            
+            nav ul li {
+                margin: 15px 0;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-item {
+                height: 300px;
+            }
+
+            .full-width-content h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-content p {
+                font-size: 0.9rem;
+            }
+            
+            .btn {
+                padding: 14px 30px;
+                font-size: 13px;
+            }
+            
+            .reservation-form {
+                padding: 40px 20px;
+            }
+            
+            .form-group h3 {
+                font-size: 20px;
+            }
+            
+            .testimonial-content p {
+                font-size: 18px;
+            }
+
+            .full-width-content h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>خدمات الأفراح الفاخرة</h1>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#intro">من نحن</a></li>
+                    <li><a href="#services">خدماتنا</a></li>
+                    <li><a href="#gallery">معرض الصور</a></li>
+                    <li><a href="#reservation">حجز</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">حفل زفاف استثنائي</h1>
+                <p class="fade-in delay-1">نقدم لكم خدمات متكاملة لتنظيم حفلات الزفاف بأعلى مستويات الرقي والفخامة</p>
+                <a href="#reservation" class="btn fade-in delay-2">احجز الآن</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="intro" class="intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2 class="fade-in">تجربة زفاف لا مثيل لها</h2>
+                <p class="fade-in delay-1">نحن نقدم خدمات زفاف فاخرة مصممة خصيصًا لتلبية أرقى المتطلبات. من خلال الاهتمام بأدق التفاصيل والتصميم المتقن، نضمن لكم تجربة استثنائية تليق بمكانتكم وتخلق ذكريات تدوم مدى الحياة.</p>
+                <a href="#services" class="btn btn-dark fade-in delay-2">اكتشف خدماتنا</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">خدماتنا</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <i class="fas fa-building"></i>
+                    <h3>قاعات فاخرة</h3>
+                    <p>اختر من بين أفخم القاعات المجهزة بأحدث التقنيات والديكورات الراقية لتناسب حفل زفافك المميز</p>
+                    <a href="#reservation" class="service-link">المزيد</a>
+                </div>
+                <div class="service-card fade-in">
+                    <i class="fas fa-car-side"></i>
+                    <h3>سيارات فاخرة</h3>
+                    <p>مجموعة من أفخم السيارات العالمية مع سائق خاص وخدمة تزيين راقية لتكتمل فخامة يومك المميز</p>
+                    <a href="#reservation" class="service-link">المزيد</a>
+                </div>
+                <div class="service-card fade-in">
+                    <i class="fas fa-utensils"></i>
+                    <h3>ضيافة راقية</h3>
+                    <p>قوائم طعام متنوعة من أشهر الطهاة العالميين مع خدمة ضيافة متكاملة تليق بمستوى ضيوفك</p>
+                    <a href="#reservation" class="service-link">المزيد</a>
+                </div>
+                <div class="service-card fade-in">
+                    <i class="fas fa-spa"></i>
+                    <h3>تنسيق زهور</h3>
+                    <p>باقات وتنسيقات زهور مميزة من أرقى أنواع الزهور العالمية بتصاميم حصرية تناسب ذوقك</p>
+                    <a href="#reservation" class="service-link">المزيد</a>
+                </div>
+                <div class="service-card fade-in">
+                    <i class="fas fa-camera"></i>
+                    <h3>تصوير احترافي</h3>
+                    <p>فريق تصوير محترف مع أحدث معدات التصوير وخدمات درون VIP لتوثيق لحظاتك الخاصة</p>
+                    <a href="#reservation" class="service-link">المزيد</a>
+                </div>
+                <div class="service-card fade-in">
+                    <i class="fas fa-music"></i>
+                    <h3>موسيقى حية</h3>
+                    <p>عازفين محترفين ودي جي لإضفاء أجواء مميزة على حفلك مع إمكانية تخصيص الموسيقى حسب ذوقك</p>
+                    <a href="#reservation" class="service-link">المزيد</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="full-width-section" style="background-image: url('https://images.unsplash.com/photo-1469371670807-013ccf25f16a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+        <div class="full-width-content">
+            <h2 class="fade-in">لحظات لا تُنسى</h2>
+            <p class="fade-in delay-1">نحن نؤمن بأن كل تفصيل صغير يساهم في خلق تجربة استثنائية. دعنا نحول حلمك إلى حقيقة.</p>
+            <a href="#reservation" class="btn fade-in delay-2">احجز موعدك</a>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">معرض الصور</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1296&q=80" alt="قاعة الأفراح">
+                    <div class="gallery-overlay">
+                        <h3>قاعة الملكية</h3>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1543131276-40a2486f932c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="سيارة زفاف">
+                    <div class="gallery-overlay">
+                        <h3>سيارات فاخرة</h3>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1529566652340-2c41a1eb6d93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="بوفيه مميز">
+                    <div class="gallery-overlay">
+                        <h3>ضيافة راقية</h3>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="كيك زفاف">
+                    <div class="gallery-overlay">
+                        <h3>كيك وحلويات</h3>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="تنسيق زهور">
+                    <div class="gallery-overlay">
+                        <h3>تنسيق زهور</h3>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="عروسين">
+                    <div class="gallery-overlay">
+                        <h3>لحظات سعيدة</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">آراء العملاء</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <p>"كانت خدماتكم استثنائية وفاقت توقعاتنا بكثير. الاهتمام بالتفاصيل كان مذهلاً، وجعلتم يوم زفافنا لا يُنسى!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="أحمد ومنى">
+                            <div class="testimonial-author-info">
+                                <h4>أحمد ومنى</h4>
+                                <span>يناير 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"الاهتمام بالتفاصيل كان مذهلاً، وكان فريق العمل محترفاً للغاية. أنصح بشدة بخدماتكم لكل من يبحث عن تجربة زفاف فاخرة."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="محمد وسارة">
+                            <div class="testimonial-author-info">
+                                <h4>محمد وسارة</h4>
+                                <span>مارس 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"لقد وفرتم علينا الكثير من الجهد والوقت، وكانت النتيجة مبهرة تفوق الوصف. شكراً جزيلاً على هذه التجربة الاستثنائية!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="خالد ونورة">
+                            <div class="testimonial-author-info">
+                                <h4>خالد ونورة</h4>
+                                <span>يونيو 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button id="prevTestimonial" class="testimonial-control"><i class="fas fa-chevron-right"></i></button>
+                <button id="nextTestimonial" class="testimonial-control"><i class="fas fa-chevron-left"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <h2 class="section-title">احجز خدماتك الآن</h2>
+            <form id="reservationForm" class="reservation-form">
+                <div class="form-group">
+                    <h3>معلومات الحجز الأساسية</h3>
+                    <div class="form-row">
+                        <div class="form-control">
+                            <label for="name">الاسم الكامل</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="phone">رقم الهاتف</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-control">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="date">تاريخ الحفل</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-control">
+                            <label for="guests">عدد الضيوف</label>
+                            <input type="number" id="guests" name="guests" min="1" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="budget">الميزانية التقريبية</label>
+                            <select id="budget" name="budget" required>
+                                <option value="">اختر الميزانية</option>
+                                <option value="budget1">أقل من 50,000 ل.س</option>
+                                <option value="budget2">50,000 - 100,000 ل.س</option>
+                                <option value="budget3">100,000 - 200,000 ل.س</option>
+                                <option value="budget4">أكثر من 200,000 ل.س</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h3>خدمات القاعة</h3>
+                    <div class="form-row">
+                        <div class="form-control">
+                            <label for="venue">اختر القاعة</label>
+                            <select id="venue" name="venue">
+                                <option value="">اختر القاعة</option>
+                                <option value="hall1">قاعة الملكية</option>
+                                <option value="hall2">قاعة الأميرات</option>
+                                <option value="hall3">قاعة القصر</option>
+                                <option value="hall4">قاعة الفخامة</option>
+                            </select>
+                        </div>
+                        <div class="form-control">
+                            <label for="chairs">عدد الكراسي</label>
+                            <input type="number" id="chairs" name="chairs" min="1">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h3>خدمات السيارة</h3>
+                    <div class="form-row">
+                        <div class="form-control">
+                            <label for="car">نوع السيارة</label>
+                            <select id="car" name="car">
+                                <option value="">اختر السيارة</option>
+                                <option value="car1">رولز رويس فانتوم</option>
+                                <option value="car2">رولز رويس جوست</option>
+                                <option value="car3">بنتلي كونتيننتال</option>
+                                <option value="car4">مرسيدس مايباخ</option>
+                            </select>
+                        </div>
+                        <div class="form-control checkbox-control">
+                            <input type="checkbox" id="driver" name="driver">
+                            <label for="driver">مع سائق</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h3>خدمات إضافية</h3>
+                    <div class="form-row">
+                        <div class="form-control checkbox-control">
+                            <input type="checkbox" id="photographer" name="photographer">
+                            <label for="photographer">تصوير فوتوغرافي</label>
+                        </div>
+                        <div class="form-control checkbox-control">
+                            <input type="checkbox" id="flowers" name="flowers">
+                            <label for="flowers">تنسيق زهور</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-control checkbox-control">
+                            <input type="checkbox" id="catering" name="catering">
+                            <label for="catering">خدمات الضيافة</label>
+                        </div>
+                        <div class="form-control checkbox-control">
+                            <input type="checkbox" id="music" name="music">
+                            <label for="music">موسيقى حية</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h3>ملاحظات إضافية</h3>
+                    <div class="form-row">
+                        <div class="form-control full-width">
+                            <label for="notes">ملاحظات</label>
+                            <textarea id="notes" name="notes" rows="4"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">إرسال الطلب</button>
+                    <button type="reset" class="btn btn-dark">إعادة تعيين</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">اتصل بنا</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>العنوان</h3>
+                            <p>دمشق، سوريا</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>الهاتف</h3>
+                            <p>+963 12 345 6789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>البريد الإلكتروني</h3>
+                            <p>info@luxuryweddings.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>ساعات العمل</h3>
+                            <p>السبت - الخميس: 10:00 ص - 8:00 م</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-control">
+                                <label for="contactName">الاسم</label>
+                                <input type="text" id="contactName" name="contactName" required>
+                            </div>
+                            <div class="form-control">
+                                <label for="contactEmail">البريد الإلكتروني</label>
+                                <input type="email" id="contactEmail" name="contactEmail" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-control full-width">
+                                <label for="contactSubject">الموضوع</label>
+                                <input type="text" id="contactSubject" name="contactSubject" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-control full-width">
+                                <label for="contactMessage">الرسالة</label>
+                                <textarea id="contactMessage" name="contactMessage" rows="4" required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">إرسال</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>خدمات الأفراح الفاخرة</h2>
+                    <p>نجعل يوم زفافك استثنائياً بكل تفاصيله</p>
+                </div>
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-angle-left"></i> الرئيسية</a></li>
+                        <li><a href="#intro"><i class="fas fa-angle-left"></i> من نحن</a></li>
+                        <li><a href="#services"><i class="fas fa-angle-left"></i> خدماتنا</a></li>
+                        <li><a href="#gallery"><i class="fas fa-angle-left"></i> معرض الصور</a></li>
+                        <li><a href="#reservation"><i class="fas fa-angle-left"></i> حجز</a></li>
+                        <li><a href="#contact"><i class="fas fa-angle-left"></i> اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>تابعنا</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 خدمات الأفراح الفاخرة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Activate animations when elements come into view
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const checkAnimations = () => {
+                fadeElements.forEach(element => {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementPosition < windowHeight - 50) {
+                        element.classList.add('active');
+                    }
+                });
+            };
+            
+            // Check animations on page load
+            checkAnimations();
+            
+            // Check animations on scroll
+            window.addEventListener('scroll', checkAnimations);
+            
+            // Header scroll effect
+            const header = document.querySelector('header');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // Mobile Navigation Toggle
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const nav = document.querySelector('nav');
+            
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    nav.classList.toggle('active');
+                    this.classList.toggle('active');
+                    
+                    if (this.classList.contains('active')) {
+                        this.innerHTML = '<i class="fas fa-times"></i>';
+                    } else {
+                        this.innerHTML = '<i class="fas fa-bars"></i>';
+                    }
+                });
+            }
+            
+            // Smooth Scrolling for Navigation Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        const headerHeight = document.querySelector('header').offsetHeight;
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        if (mobileMenuBtn && mobileMenuBtn.classList.contains('active')) {
+                            mobileMenuBtn.click();
+                        }
+                    }
+                });
+            });
+            
+            // Testimonials Slider
+            const testimonials = document.querySelectorAll('.testimonial');
+            let currentTestimonial = 0;
+            
+            // Next testimonial
+            document.getElementById('nextTestimonial').addEventListener('click', function() {
+                testimonials[currentTestimonial].classList.remove('active');
+                currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+                testimonials[currentTestimonial].classList.add('active');
+            });
+            
+            // Previous testimonial
+            document.getElementById('prevTestimonial').addEventListener('click', function() {
+                testimonials[currentTestimonial].classList.remove('active');
+                currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+                testimonials[currentTestimonial].classList.add('active');
+            });
+            
+            // Auto-rotate testimonials
+            setInterval(() => {
+                document.getElementById('nextTestimonial').click();
+            }, 5000);
+            
+            // Form Submission
+            const reservationForm = document.getElementById('reservationForm');
+            if (reservationForm) {
+                reservationForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Create success message
+                    const successMessage = document.createElement('div');
+                    successMessage.className = 'success-message';
+                    successMessage.innerHTML = `
+                        <div class="success-content">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>تم استلام طلبك بنجاح</h3>
+                            <p>سنقوم بالتواصل معك قريباً لتأكيد الحجز وتفاصيل الخدمات.</p>
+                            <button class="btn btn-primary close-message">حسناً</button>
+                        </div>
+                    `;
+                    
+                    document.body.appendChild(successMessage);
+                    
+                    // Show success message with animation
+                    setTimeout(() => {
+                        successMessage.classList.add('active');
+                    }, 10);
+                    
+                    // Close success message
+                    successMessage.querySelector('.close-message').addEventListener('click', function() {
+                        successMessage.classList.remove('active');
+                        setTimeout(() => {
+                            document.body.removeChild(successMessage);
+                        }, 300);
+                    });
+                    
+                    // Reset form
+                    reservationForm.reset();
+                });
+            }
+            
+            // Contact Form Submission
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Create success message
+                    const successMessage = document.createElement('div');
+                    successMessage.className = 'success-message';
+                    successMessage.innerHTML = `
+                        <div class="success-content">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>تم إرسال رسالتك بنجاح</h3>
+                            <p>سنقوم بالرد عليك في أقرب وقت ممكن.</p>
+                            <button class="btn btn-primary close-message">حسناً</button>
+                        </div>
+                    `;
+                    
+                    document.body.appendChild(successMessage);
+                    
+                    // Show success message with animation
+                    setTimeout(() => {
+                        successMessage.classList.add('active');
+                    }, 10);
+                    
+                    // Close success message
+                    successMessage.querySelector('.close-message').addEventListener('click', function() {
+                        successMessage.classList.remove('active');
+                        setTimeout(() => {
+                            document.body.removeChild(successMessage);
+                        }, 300);
+                    });
+                    
+                    // Reset form
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
